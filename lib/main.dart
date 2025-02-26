@@ -30,4 +30,16 @@ class ContactListScreen extends StatefulWidget {
 class _ContactListScreenState extends State<ContactListScreen> {
   final DatabaseHelper dbHelper = DatabaseHelper.instance;
   List<Contact> contacts = [];
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('Lista de Contatos'),
+      ),
+      body: Center(
+        child: Text('Lista de contatos vazia'),
+      ),
+    );
+  }
 }
